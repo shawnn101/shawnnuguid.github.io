@@ -435,6 +435,17 @@ nav {
   display: block;
 }
 
+.project-picture-frame.screenshot-frame {
+  background: rgba(2, 7, 17, 0.82);
+  border-style: solid;
+}
+
+.project-picture-frame.screenshot-frame img {
+  object-fit: contain;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.96);
+}
+
 .project-actions {
   display: flex;
   align-items: center;
