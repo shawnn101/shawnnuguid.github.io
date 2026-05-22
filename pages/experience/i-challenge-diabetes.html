@@ -8,12 +8,12 @@
 </head>
 <body>
   <header>
-    <a class="logo" href="../../index.html">SHAWN<span>.DEV</span></a>
+    <a class="logo" href="../../index.html">SHAWN<span>.NUGUID</span></a>
     <nav>
       <div class="nav-item"><a class="nav-link" href="../about/who-i-am.html">About &#9662;</a><div class="dropdown-menu"><a href="../about/who-i-am.html">Who I Am</a><a href="../about/experience-timeline.html">Experience Timeline</a><a href="../about/career-interests.html">Career Interests</a></div></div>
       <div class="nav-item"><a class="nav-link" href="../../index.html#projects">Projects &#9662;</a><div class="dropdown-menu"><a href="../projects/ttc-bus-tracker.html">TTC Bus Tracker</a><a href="../projects/production-application.html">Productivity AI</a><a href="../projects/iverlog-alu.html">Iverilog ALU</a><a href="../projects/bluetooth-robotic-hand.html">Bluetooth Robotic Hand</a><a href="../projects/ai-applicant-tracker.html">AI Applicant Tracker</a><a href="../projects/home-server.html">Home Server</a></div></div>
       <div class="nav-item"><a class="nav-link" href="../../index.html#resume">Resume &#9662;</a><div class="dropdown-menu"><a href="../../index.html#resume">Resume Preview</a><a href="../../resume.pdf" target="_blank">Open Resume PDF</a><a href="../../resume.pdf" download>Download Resume</a></div></div>
-      <div class="nav-item"><a class="nav-link" href="i-challenge-diabetes.html">Experience &#9662;</a><div class="dropdown-menu"><a href="pocket-clinic.html">Pocket Clinic</a><a href="tmu-intramurals.html">TMU Intramurals</a><a href="i-challenge-diabetes.html">I Challenge Diabetes</a><a href="tmu-recreation-clubs.html">TMU Recreation Clubs</a></div></div>
+      <div class="nav-item"><a class="nav-link" href="i-challenge-diabetes.html">Experience &#9662;</a><div class="dropdown-menu"><a href="pocket-clinic.html">Pocket Clinic</a><a href="tmu-intramurals.html">TMU Intramurals</a><a href="i-challenge-diabetes.html">I Challenge Diabetes</a><a href="tmu-recreation-clubs.html">TMU Recreation Clubs</a><a href="cisco-networking-academy.html">Cisco Co-op</a></div></div>
       <div class="nav-item"><a class="nav-link" href="../../index.html#contact">Contact &#9662;</a><div class="dropdown-menu"><a href="mailto:shawnnbiz@gmail.com">Email</a><a href="https://www.linkedin.com/in/shawnnuguid/" target="_blank">LinkedIn</a><a href="https://github.com/shawnn101" target="_blank">GitHub</a></div></div>
     </nav>
   </header>
@@ -32,26 +32,28 @@
             <h3>What I Did & Used</h3>
             <p>
               At I Challenge Diabetes Camp, I worked on software improvements for camper health-data
-              workflows, focusing on cleaner CSV uploads, safer record updates, and clearer access to
-              time-sensitive information for staff and families. I documented and helped design a
+              workflows, with most of the work centered on making updates safer for staff to test
+              and easier to trust during busy camp hours. I documented and helped design a
               Supabase-backed upload flow where field-collected CSV files are parsed in the app,
-              inserted into a JSONB staging table, and then upserted into the camper records through
-              a database function that can evolve when new CSV columns appear.
+              inserted into a JSONB staging table, and then upserted into camper records through
+              a database function that can grow when new CSV columns appear.
             </p>
             <p>
-              I also worked through a production-style automated email flow that retrieves each
-              camper's most recent blood glucose reading and prepares parent or guardian updates.
-              The documentation covers the Next.js/React upload path, Papa.parse CSV handling,
-              Supabase client usage, SQL/RPC logic, PostgreSQL queries, server-side routes, and
-              Nodemailer-based notifications. I kept the implementation in testing:
-              first validating database query output without sending emails, then using a fixed test
-              address before any real parent communication.
+              I also developed a staging environment so staff working closest to production could
+              test changes without needing to shut down or disrupt the live server during peak
+              hours. Alongside that, I worked through an
+              automated email flow that retrieves each camper's most recent blood glucose reading
+              and prepares parent or guardian updates. The documentation covers the Next.js/React
+              upload path, Papa.parse CSV handling, Supabase client usage, SQL/RPC logic,
+              PostgreSQL queries, server-side routes, and Nodemailer-based notifications.
             </p>
             <p>
-              This experience made the technical work feel very concrete: schema changes, staging
-              tables, environment variables, REST routes, and email delivery all had to support a
-              real camp environment where accuracy and privacy mattered. It strengthened my ability
-              to connect backend data integrity with practical staff workflows.
+              This experience made the technical work feel very concrete. Schema changes, staging
+              tables, environment variables, REST routes, and email delivery were not just abstract
+              backend pieces; they had to fit into a real camp environment where staff needed things
+              to work cleanly and families needed accurate information. It helped me get better at
+              connecting backend data integrity with the day-to-day reality of people actually using
+              the system.
             </p>
             <div class="experience-meta">
               <span class="meta-pill">Supabase</span>
@@ -67,6 +69,7 @@
               <span class="meta-pill">Papa.parse</span>
               <span class="meta-pill">Nodemailer</span>
               <span class="meta-pill">CSV Sync</span>
+              <span class="meta-pill">Staging Environment</span>
             </div>
           </div>
         </div>
@@ -74,12 +77,11 @@
         <div class="experience-document-panel reveal">
           <h3>Software Design Documentation</h3>
           <p>
-            Software design documentation covering CSV sync, Supabase
-            staging and upsert logic, automated blood-glucose update emails, and testing notes with
-            sensitive endpoints and keys removed.
+            Software design documentation covering CSV sync, Supabase staging and upsert logic,
+            automated blood-glucose update emails, and testing notes.
           </p>
           <div class="document-frame large-document-frame">
-            <iframe src="../../assets/experience/icd-software-design-documentation-safe.pdf" title="I Challenge Diabetes redacted software design documentation PDF"></iframe>
+            <iframe src="../../assets/experience/icd-software-design-documentation-safe.pdf" title="I Challenge Diabetes software design documentation PDF"></iframe>
           </div>
           <p>
             <a class="document-open-link" href="../../assets/experience/icd-software-design-documentation-safe.pdf" target="_blank" rel="noopener">Open PDF in a new tab -></a>
@@ -92,6 +94,7 @@
         <a class="file-link" href="tmu-intramurals.html">TMU Intramurals<span>ATS, data, dashboards</span></a>
         <a class="file-link active" href="i-challenge-diabetes.html">I Challenge Diabetes<span>Supabase and APIs</span></a>
         <a class="file-link" href="tmu-recreation-clubs.html">TMU Recreation Clubs<span>Operations lead</span></a>
+        <a class="file-link" href="cisco-networking-academy.html">Cisco Co-op<span>Sales and IoT</span></a>
       </nav>
     </section>
   </main>
