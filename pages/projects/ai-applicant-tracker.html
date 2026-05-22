@@ -24,7 +24,7 @@
           <a href="ttc-bus-tracker.html">TTC Bus Tracker</a>
           <!-- <a href="securestore-ai.html">Securestore AI</a> -->
           <a href="production-application.html">Productivity AI</a>
-          <a href="iverlog-alu.html">Iverlog ALU</a>
+          <a href="iverlog-alu.html">Iverilog ALU</a>
           <a href="bluetooth-robotic-hand.html">Bluetooth Robotic Hand</a>
           <a href="ai-applicant-tracker.html">AI Applicant Tracker</a>
           <a href="home-server.html">Home Server</a>
@@ -41,10 +41,10 @@
       <div class="nav-item">
         <a class="nav-link" href="../../index.html#experience">Experience ▾</a>
         <div class="dropdown-menu">
-          <a href="../../index.html#experience">Pocket Clinic</a>
-          <a href="../../index.html#experience">TMU Intramurals</a>
-          <a href="../../index.html#experience">I Challenge Diabetes</a>
-          <a href="../../index.html#experience">TMU Recreation Clubs</a>
+          <a href="../experience/pocket-clinic.html">Pocket Clinic</a>
+          <a href="../experience/tmu-intramurals.html">TMU Intramurals</a>
+          <a href="../experience/i-challenge-diabetes.html">I Challenge Diabetes</a>
+          <a href="../experience/tmu-recreation-clubs.html">TMU Recreation Clubs</a>
         </div>
       </div>
       <div class="nav-item">
@@ -66,16 +66,16 @@
           <div class="section-label">Project Page</div>
           <h1 class="section-title">AI Applicant Tracker</h1>
           <p class="section-text">
-            An internal applicant ranking tool built to support faster, more structured hiring
-            review for TMU Intramural & Sport.
+            A Python-based ATS system that ranks PDF resumes against role requirements,
+            responsibilities, qualifications, and relevant experience evidence.
           </p>
-          <span class="project-status">AI / Operations Tool</span>
+          <span class="project-status">Python / Resume Ranking</span>
           <div class="project-actions">
-            <a class="github-link" href="https://github.com/shawnn101/ai-applicant-tracker" target="_blank">View GitHub</a>
+            <a class="github-link" href="https://github.com/shawnn101/ATS-System" target="_blank" rel="noopener">View GitHub</a>
           </div>
         </div>
-        <div class="project-picture-frame">
-          <span>Project Image</span>
+        <div class="project-picture-frame dashboard-frame">
+          <img src="../../assets/projects/ats-system-visual.png" alt="ATS dashboard visual showing resume inputs, scoring weights, ranked candidates, and CSV output" />
         </div>
       </div>
 
@@ -83,30 +83,30 @@
         <div class="glass-card reveal">
           <h3>Overview</h3>
           <p>
-            The tool uses structured evaluation criteria to rank applicants and help staff focus
-            review time on stronger candidate matches.
+            The system reviews batches of PDF resumes and produces a ranked CSV so hiring staff
+            can start with the strongest matches while still keeping final decisions human-led.
           </p>
         </div>
         <div class="glass-card reveal">
           <h3>Technical Focus</h3>
           <p>
-            The project connects Python automation, Pandas-based data processing, scikit-learn,
-            resume screening logic, and repeatable applicant evaluation workflows.
+            The pipeline uses PyMuPDF for PDF extraction, NLTK stopword filtering, TF-IDF
+            vectorization, cosine similarity scoring, and Pandas for structured report output.
           </p>
         </div>
         <div class="glass-card reveal">
-          <h3>Resume Notes</h3>
+          <h3>Scoring Logic</h3>
           <ul>
-            <li>Increased resume screening speed by 70%.</li>
-            <li>Improved candidate prioritization through automated ranking.</li>
-            <li>Used structured evaluation criteria to support hiring workflow decisions.</li>
+            <li>Compares resumes against job description, responsibilities, and qualifications.</li>
+            <li>Weights relevant experience highest to reduce simple keyword stuffing.</li>
+            <li>Reports matched keywords, missing keywords, strengths, gaps, and ranking reasons.</li>
           </ul>
         </div>
         <div class="glass-card reveal">
-          <h3>Next Steps</h3>
+          <h3>Repository</h3>
           <p>
-            Add workflow screenshots, explain the ranking criteria, and include privacy-safe sample
-            output from the screening process.
+            The public repository includes the resume reviewer script and README documentation for
+            installing dependencies, setting the resume folder path, and exporting ranked results.
           </p>
         </div>
       </div>

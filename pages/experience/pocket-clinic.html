@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pocket Clinic Experience | Shawn Nuguid</title>
+  <link rel="stylesheet" href="../../css/about-pages.css" />
+</head>
+<body>
+  <header>
+    <a class="logo" href="../../index.html">SHAWN<span>.DEV</span></a>
+    <nav>
+      <div class="nav-item">
+        <a class="nav-link" href="../about/who-i-am.html">About &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="../about/who-i-am.html">Who I Am</a>
+          <a href="../about/experience-timeline.html">Experience Timeline</a>
+          <a href="../about/career-interests.html">Career Interests</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="../../index.html#projects">Projects &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="../projects/ttc-bus-tracker.html">TTC Bus Tracker</a>
+          <a href="../projects/production-application.html">Productivity AI</a>
+          <a href="../projects/iverlog-alu.html">Iverilog ALU</a>
+          <a href="../projects/bluetooth-robotic-hand.html">Bluetooth Robotic Hand</a>
+          <a href="../projects/ai-applicant-tracker.html">AI Applicant Tracker</a>
+          <a href="../projects/home-server.html">Home Server</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="../../index.html#resume">Resume &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="../../index.html#resume">Resume Preview</a>
+          <a href="../../resume.pdf" target="_blank">Open Resume PDF</a>
+          <a href="../../resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="pocket-clinic.html">Experience &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="pocket-clinic.html">Pocket Clinic</a>
+          <a href="tmu-intramurals.html">TMU Intramurals</a>
+          <a href="i-challenge-diabetes.html">I Challenge Diabetes</a>
+          <a href="tmu-recreation-clubs.html">TMU Recreation Clubs</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="../../index.html#contact">Contact &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="mailto:shawnnbiz@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/shawnnuguid/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/shawnn101" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="section-header reveal">
+        <div class="section-label">Experience File</div>
+        <h1 class="section-title">Pocket Clinic Inc.</h1>
+        <p class="section-text">Hardware Design and Validation Engineer | Mar 2025 - May 2025</p>
+      </div>
+
+      <div class="experience-shell">
+        <div class="experience-card-stack">
+          <div class="glass-card reveal">
+            <h3>What I Did & Used</h3>
+            <p>
+              At Pocket Clinic, I worked on electrical circuit design, hardware validation, and
+              troubleshooting for a connected medical-device project. The work connected PCB design,
+              sensing materials, firmware, mechanical packaging, and cost-aware component decisions.
+              Because the device context was medical and privacy-sensitive, the final deliverable keeps
+              proprietary design details generalized while still showing the engineering process behind
+              the testing, research, and validation work.
+            </p>
+            <p>
+              I researched smart sensing materials and sensor approaches including RFID sensing,
+              PVA, phenanthrene, ZnO thin film behavior, and other material responses that could
+              support reliable detection. I also created Verilog/SystemVerilog testbench concepts for
+              matrix-style PCB pin testing, but those were not used as the project direction shifted
+              toward physical component testing, material behavior, and rubber degradation validation.
+              That testing used staged MOSFET control with Arduino, ATtiny85, and Pro Mini/Nano-style
+              platforms to evaluate whether the material and assembly could hold up under repeated
+              thermal stress.
+            </p>
+            <p>
+              I reviewed schematic and layout work in KiCad with ERC and DRC checks, helped refine
+              sequential MOSFET control, and researched whether an ESP32 could replace the Arduino
+              Pro Mini for better modularity, wireless logging, Bluetooth/Wi-Fi control, and future
+              scalability. The ESP32 had strong advantages, but the 3.3V logic level created extra
+              complexity for the 5V MOSFET gate requirements, so the lower-complexity Pro Mini path
+              remained the more practical fit for the test setup.
+            </p>
+            <p>
+              What I developed most from this role was the ability to move between research,
+              simulation, firmware, and real hardware without treating them as separate problems.
+              I learned how quickly a clean idea can change once component limits, material behavior,
+              power constraints, safety, cost, and manufacturability are involved. It made me more
+              disciplined about reading datasheets, testing assumptions on the bench, documenting
+              tradeoffs clearly, and choosing designs that are not just technically interesting, but
+              practical enough to build, debug, and improve.
+            </p>
+            <div class="experience-meta">
+              <span class="meta-pill">Electrical Troubleshooting</span>
+              <span class="meta-pill">PCB Design</span>
+              <span class="meta-pill">Electronic Hardware</span>
+              <span class="meta-pill">EDA</span>
+              <span class="meta-pill">RFID Research</span>
+              <span class="meta-pill">Sensors</span>
+              <span class="meta-pill">Python</span>
+              <span class="meta-pill">Verilog/SystemVerilog</span>
+              <span class="meta-pill">ESP32 Feasibility</span>
+              <span class="meta-pill">MOSFET Testing</span>
+              <span class="meta-pill">Mechanical Assembly</span>
+              <span class="meta-pill">Regulatory Compliance</span>
+              <span class="meta-pill">Cost Reduction</span>
+              <span class="meta-pill">Hardware Validation</span>
+              <span class="meta-pill">Firmware Debugging</span>
+              <span class="meta-pill">KiCad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-document-panel reveal">
+          <h3>Final Deliverable PDF</h3>
+          <p>
+            A technical summary of the electrical circuit design work, material research,
+            rubber degradation testing, microcontroller tradeoff analysis, and supporting appendices.
+          </p>
+          <div class="document-frame large-document-frame">
+            <iframe src="../../assets/experience/pocket-clinic-final-deliverable.pdf" title="Pocket Clinic final deliverable PDF"></iframe>
+          </div>
+          <p>
+            <a class="document-open-link" href="../../assets/experience/pocket-clinic-final-deliverable.pdf" target="_blank" rel="noopener">Open PDF in a new tab -></a>
+          </p>
+        </div>
+      </div>
+
+      <nav class="experience-file-dock reveal" aria-label="Experience file selector">
+        <a class="file-link active" href="pocket-clinic.html">Pocket Clinic<span>Hardware validation</span></a>
+        <a class="file-link" href="tmu-intramurals.html">TMU Intramurals<span>ATS, data, dashboards</span></a>
+        <a class="file-link" href="i-challenge-diabetes.html">I Challenge Diabetes<span>Supabase and APIs</span></a>
+        <a class="file-link" href="tmu-recreation-clubs.html">TMU Recreation Clubs<span>Operations lead</span></a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Shawn Nuguid | Personal Website</footer>
+  <script src="../../js/site-background.js"></script>
+</body>
+</html>
